@@ -1,3 +1,3 @@
-# Hyperbolic
+# ES6 Flux Todo
 
-Hyperbolic & Conformal Geometry Visualizations in D3 + React, written in ES6
+The [flux todo list example](https://facebook.github.io/flux/docs/todo-list.html#content) in ES6.

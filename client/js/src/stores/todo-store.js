@@ -1,16 +1,17 @@
 'use strict';
+
 import AppDispatcher from '../dispatcher/app-dispatcher';
 import TodoConstants from '../constants/todo-constants';
 import Events from 'events';
 
 const CHANGE_EVENT = 'change';
 
-export class TodoStore extends Events.EventEmitter {
+class TodoStore extends Events.EventEmitter {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.todos = {};
-        this.dispatcherIndex = AppDispatcher.register(this.handleAction);
+        this.dispatcherIndex = AppDispatcher.register(this.handleAction.bind(this));
     }
 
     handleAction(payload) {
@@ -91,3 +92,5 @@ export class TodoStore extends Events.EventEmitter {
     }
 
 }
+
+export default new TodoStore();

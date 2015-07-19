@@ -1,5 +1,5 @@
 {
-  "name": "babel-react-express-example",
+  "name": "react-es6-todo",
   "version": "0.0.0",
   "devDependencies": {
     "babelify": "^6.1.2",

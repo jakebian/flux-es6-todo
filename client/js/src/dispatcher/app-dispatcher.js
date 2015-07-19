@@ -2,7 +2,7 @@
 
 import Flux from 'flux';
 
-export class AppDispatcher extends Flux.Dispatcher {
+class AppDispatcher extends Flux.Dispatcher {
     /**
    * A bridge function between the views and the dispatcher, marking the action
    * as a view action.  Another variant here could be handleServerAction.
@@ -17,3 +17,5 @@ export class AppDispatcher extends Flux.Dispatcher {
 
     };
 }
+
+export default new AppDispatcher();
